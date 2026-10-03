@@ -24,7 +24,7 @@
 </head>
 <body>
 <h1>Privacy Policy — Sudoku</h1>
-<p class="meta">Effective date: September 13, 2026 · App: Sudoku (<code>com.whizkidworld.sudoku</code>)</p>
+<p class="meta">Effective date: October 3, 2026 · App: Sudoku (<code>com.whizkidworld.sudoku</code>)</p>
 
 <p>This policy describes what information the Sudoku app handles and how. The
 short version: your puzzles, scores, and settings stay on your device. Six things do leave it — what Google AdMob collects to serve ads, crash and
@@ -44,13 +44,10 @@ or link it to you:</p>
   <li>Your local profile (a display name and avatar you choose — these are not
       linked to your identity and never leave the device)</li>
 </ul>
-<p>You can erase all of this at any time from inside the app:
-<strong>Settings → Data → Delete all app data</strong>, which removes your scores,
-medals, daily-challenge history, profile, every preference and any game in
-progress, returning the app to how it was when you installed it. Clearing the
-app's data in Android settings or uninstalling the app does the same. The app
-has no user accounts in this version; nothing is collected server-side by
-us.</p>
+<p>You can erase all of this at any time from inside the app (see
+<a href="#deleting">Deleting your data</a> below), by clearing the app's data in
+Android settings, or by uninstalling the app. The app has no user accounts in
+this version, and none of the above is uploaded or linked to you.</p>
 
 <h2>Usage statistics (Google Firebase Analytics)</h2>
 <p>The app reports anonymous statistics about how it is used, so we can tell
@@ -102,9 +99,10 @@ Privacy → Ads).</p>
 server (hosted on Supabase). The request is anonymous and one-way: it asks for
 that date's puzzle and sends nothing about you, your progress or your device
 beyond what any internet request necessarily carries — principally your IP
-address, which our hosting provider may retain in ordinary server logs. Nothing
-in those logs is linked to a person, and this version of the app has no accounts
-to link them to.</p>
+address. Our hosting provider records that address in its request logs, along
+with the approximate location it implies (country, region and city), and deletes
+those logs after no more than seven days. Nothing in them is linked to a person,
+and this version of the app has no accounts to link them to.</p>
 <p>If the app has no connection it generates the same puzzle on your device
 instead, so the daily challenge works offline.</p>
 
@@ -145,12 +143,12 @@ left a review or what it said. Any rating you choose to leave goes to Google
 under your Play account, exactly as it would if you rated the app from the Play
 Store directly.</p>
 <p>You can stop the app asking at all:
-<strong>Settings → I've already reviewed</strong>.</p>
+<strong>Me → About Game → I've already reviewed</strong>.</p>
 
 <h2>Notifications</h2>
 <p>The optional daily-challenge reminder is scheduled entirely on your device.
-It involves no server and can be turned off in the app's Settings
-(Notifications → Daily challenge reminder) or via Android's notification
+It involves no server and can be turned off in the app (Me → Settings →
+Notifications → Daily challenge reminder) or via Android's notification
 settings.</p>
 
 <h2>Children</h2>
@@ -165,6 +163,19 @@ online leaderboards. If and when that ships, this policy will be updated first
 to describe exactly what would be collected (email address, chosen display
 name, and puzzle scores) and how to delete it. Nothing in the current version
 creates an account or uploads your data.</p>
+
+<h2 id="deleting">Deleting your data</h2>
+<p>Everything this app stores on your device can be erased in one step:
+<strong>Me → Privacy → Delete all app data</strong> removes scores, medals,
+daily-challenge history, your profile, every preference and any game in
+progress. Uninstalling the app does the same.</p>
+<p>Crash reports are different, and we would rather say so plainly. Firebase
+Crashlytics keeps them for 90 days and then deletes them. A report carries
+nothing that identifies you, so we have no way to find yours among others and
+delete it sooner; it is removed on that schedule along with everything else.</p>
+<p>The one thing that is not ours to delete is the advertising identifier used by
+AdMob, which Android controls — you can reset or delete it in Settings → Privacy
+→ Ads, as described above.</p>
 
 <h2>Contact</h2>
 <p>Questions or requests about this policy:
